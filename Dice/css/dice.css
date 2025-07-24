@@ -1,0 +1,448 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    height: 100vh;
+    background-color: #e0e0e0;
+    font-family: Arial, sans-serif;
+}
+
+.dice1 {
+    width: 100px;
+    height: 100px;
+    margin: 10px;
+    background-color: #e0e0e0;
+    border-radius: 15px;
+    box-shadow: 10px 10px 20px #000000, -10px -10px 20px #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.dice1:hover {
+    transform: scale(0.95);
+    box-shadow: 5px 5px 10px #bebebe, -5px -5px 10px #ffffff;
+}
+
+
+.dot1_dice1 {
+    width: 20px;
+    height: 20px;
+    background-color: #e0e0e0;
+    border-radius: 50%;
+    box-shadow: inset 5px 5px 10px #000000, inset -5px -5px 10px #ffffff;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+
+.dot2_dice1 {
+    width: 20px;
+    height: 20px;
+    background-color: #e0e0e0;
+    border-radius: 50%;
+    box-shadow: inset 5px 5px 10px #000000, inset -5px -5px 10px #ffffff;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+.dot3_dice1 {
+    width: 20px;
+    height: 20px;
+    background-color: #e0e0e0;
+    border-radius: 50%;
+    box-shadow: inset 5px 5px 10px #000000, inset -5px -5px 10px #ffffff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.dot4_dice1 {
+    width: 20px;
+    height: 20px;
+    background-color: #e0e0e0;
+    border-radius: 50%;
+    box-shadow: inset 5px 5px 10px #000000, inset -5px -5px 10px #ffffff;
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+}
+
+.dot5_dice1 {
+    width: 20px;
+    height: 20px;
+    background-color: #e0e0e0;
+    border-radius: 50%;
+    box-shadow: inset 5px 5px 10px #000000, inset -5px -5px 10px #ffffff;
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+}
+
+.dot6_dice1 {
+    width: 20px;
+    height: 20px;
+    background-color: #e0e0e0;
+    border-radius: 50%;
+    box-shadow: inset 5px 5px 10px #000000, inset -5px -5px 10px #ffffff;
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    transform: translateY(-50%);
+}
+
+.dot7_dice1 {
+    width: 20px;
+    height: 20px;
+    background-color: #e0e0e0;
+    border-radius: 50%;
+    box-shadow: inset 5px 5px 10px #000000, inset -5px -5px 10px #ffffff;
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+}
+
+.dice2 {
+    width: 150px;
+    height: 150px;
+    margin: 10px;
+    background-color: #e0e0e0;
+    border-radius: 30px;
+    box-shadow: 10px 10px 20px #000000, -10px -10px 20px #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.dice2:hover {
+    transform: scale(0.95);
+    box-shadow: 5px 5px 10px #bebebe, -5px -5px 10px #ffffff;
+}
+
+.dot1_dice2 {
+    top: 15px;
+    left: 15px;
+    width: 30px;
+    height: 30px;
+    background-color: #e0e0e0;
+    border-radius: 50%;
+    box-shadow: inset 5px 5px 10px #000000, inset -5px -5px 10px #ffffff;
+    position: absolute;
+}
+
+.dot2_dice2 {
+    top: 15px;
+    right: 15px;
+    width: 30px;
+    height: 30px;
+    background-color: #e0e0e0;
+    border-radius: 50%;
+    box-shadow: inset 5px 5px 10px #000000, inset -5px -5px 10px #ffffff;
+    position: absolute;
+}
+
+.dot3_dice2 {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 30px;
+    height: 30px;
+    background-color: #e0e0e0;
+    border-radius: 50%;
+    box-shadow: inset 5px 5px 10px #000000, inset -5px -5px 10px #ffffff;
+    position: absolute;
+}
+
+.dot4_dice2 {
+    bottom: 15px;
+    left: 15px;
+    width: 30px;
+    height: 30px;
+    background-color: #e0e0e0;
+    border-radius: 50%;
+    box-shadow: inset 5px 5px 10px #000000, inset -5px -5px 10px #ffffff;
+    position: absolute;
+}
+
+.dot5_dice2 {
+    bottom: 15px;
+    right: 15px;
+    width: 30px;
+    height: 30px;
+    background-color: #e0e0e0;
+    border-radius: 50%;
+    box-shadow: inset 5px 5px 10px #000000, inset -5px -5px 10px #ffffff;
+    position: absolute;
+}
+
+.dot6_dice2 {
+    top: 50%;
+    left: 15px;
+    transform: translateY(-50%);
+    width: 30px;
+    height: 30px;
+    background-color: #e0e0e0;
+    border-radius: 50%;
+    box-shadow: inset 5px 5px 10px #000000, inset -5px -5px 10px #ffffff;
+    position: absolute;
+}
+
+.dot7_dice2 {
+    top: 50%;
+    right: 15px;
+    transform: translateY(-50%);
+    width: 30px;
+    height: 30px;
+    background-color: #e0e0e0;
+    border-radius: 50%;
+    box-shadow: inset 5px 5px 10px #000000, inset -5px -5px 10px #ffffff;
+    position: absolute;
+}
+
+.dice3 {
+    width: 200px;
+    height: 200px;
+    margin: 10px;
+    background-color: #e0e0e0;
+    border-radius: 30px;
+    box-shadow: 10px 10px 20px #000000, -10px -10px 20px #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.dice3:hover {
+    transform: scale(0.95);
+    box-shadow: 5px 5px 10px #bebebe, -5px -5px 10px #ffffff;
+}
+
+.dot1_dice3 {
+    top: 20px;
+    left: 20px;
+    width: 40px;
+    height: 40px;
+    background-color: #e0e0e0;
+    border-radius: 50%;
+    box-shadow: inset 5px 5px 10px #000000, inset -5px -5px 10px #ffffff;
+    position: absolute;
+}
+
+.dot2_dice3 {
+    top: 20px;
+    right: 20px;
+    width: 40px;
+    height: 40px;
+    background-color: #e0e0e0;
+    border-radius: 50%;
+    box-shadow: inset 5px 5px 10px #000000, inset -5px -5px 10px #ffffff;
+    position: absolute;
+}
+
+.dot3_dice3 {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 40px;
+    height: 40px;
+    background-color: #e0e0e0;
+    border-radius: 50%;
+    box-shadow: inset 5px 5px 10px #000000, inset -5px -5px 10px #ffffff;
+    position: absolute;
+}
+
+.dot4_dice3 {
+    bottom: 20px;
+    left: 20px;
+    width: 40px;
+    height: 40px;
+    background-color: #e0e0e0;
+    border-radius: 50%;
+    box-shadow: inset 5px 5px 10px #000000, inset -5px -5px 10px #ffffff;
+    position: absolute;
+}
+
+.dot5_dice3 {
+    bottom: 20px;
+    right: 20px;
+    width: 40px;
+    height: 40px;
+    background-color: #e0e0e0;
+    border-radius: 50%;
+    box-shadow: inset 5px 5px 10px #000000, inset -5px -5px 10px #ffffff;
+    position: absolute;
+}
+
+.dot6_dice3 {
+    top: 50%;
+    left: 20px;
+    transform: translateY(-50%);
+    width: 40px;
+    height: 40px;
+    background-color: #e0e0e0;
+    border-radius: 50%;
+    box-shadow: inset 5px 5px 10px #000000, inset -5px -5px 10px #ffffff;
+    position: absolute;
+}
+
+.dot7_dice3 {
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+    width: 40px;
+    height: 40px;
+    background-color: #e0e0e0;
+    border-radius: 50%;
+    box-shadow: inset 5px 5px 10px #000000, inset -5px -5px 10px #ffffff;
+    position: absolute;
+}
+
+.sectionInformation {
+    display: flex;
+    width: 100%;
+    height: 15%;
+    border: 1px solid blueviolet;
+}
+
+#littleDiceZone {
+    display: flex;
+    border: 2px dotted black;
+    width: 33%;
+}
+
+#littleDiceZone div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: red;
+    width: 25%;
+    height: 100%;
+
+}
+
+#LittleDiceNumber {
+    font-size: 40px;
+    font-weight: bolder;
+}
+
+#LittleDiceDotNumber {
+    font-size: 40px;
+    font-weight: bolder;
+}
+
+#mediumDiceZone {
+    display: flex;
+    border: 2px dotted black;
+    width: 33%;
+}
+
+#mediumDiceZone div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: blueviolet;
+    width: 25%;
+    height: 100%;
+}
+
+#MediumDiceNumber {
+    font-size: 40px;
+    font-weight: bolder;
+}
+
+#MediumDiceDotNumber {
+    font-size: 40px;
+    font-weight: bolder;
+}
+
+#bigDiceZone {
+    display: flex;
+    border: 2px dotted black;
+    width: 33%;
+}
+
+#bigDiceZone div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: #93e22b;
+    width: 25%;
+    height: 100%;
+}
+
+#BigDiceNumber {
+    font-size: 40px;
+    font-weight: bolder;
+}
+
+#BigDiceDotNumber {
+    font-size: 40px;
+    font-weight: bolder;
+}
+
+.sectionContent {
+    display: flex;
+    width: 100%;
+    height: 85%;
+    /* border: 1px solid yellow; */
+}
+
+.displayDices {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    /* border: 1px solid blue; */
+    height: 100%;
+    width: 80%;
+}
+
+.buttons {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 10px;
+    /* border: 1px solid red; */
+    height: 100%;
+    width: 20%;
+}
+
+
+
+#buttonLittleDice {
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    border-radius: 15%;
+    font-size: 20px;
+    font-weight: bolder;
+}
+
+#buttonMediumDice {
+    width: 150px;
+    height: 150px;
+    background-color: blueviolet;
+    border-radius: 15%;
+    font-size: 30px;
+    font-weight: bolder;
+}
+
+#buttonBigDice {
+    width: 200px;
+    height: 200px;
+    background-color: #93e22b;
+    border-radius: 15%;
+    font-size: 40px;
+    font-weight: bolder;
+}
